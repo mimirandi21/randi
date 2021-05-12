@@ -21,63 +21,69 @@ function easeContent() {
 			: svg.classList.remove("animate");
 	});
 }
-(function ($) {
-	$.fn.letterDrop = function () {
-		// Chainability
-		return this.each(function () {
-			var obj = $(this);
 
-			var drop = {
-				arr: obj.text().split(""),
+// var spans = document.querySelectorAll("tspan");
+// var i = 0;
+// for (i = 0; i < spans.length; i++) {
+// 	spans[i].setAttribute("rotate", 10 * Math.random() - 5);
+// }
+// (function ($) {
+// 	$.fn.letterDrop = function () {
+// 		// Chainability
+// 		return this.each(function () {
+// 			var obj = $(this);
 
-				range: {
-					min: 1,
-					max: 9,
-				},
+// 			var drop = {
+// 				arr: obj.text().split(""),
 
-				styles: function () {
-					var dropDelays = "\n",
-						addCSS;
+// 				range: {
+// 					min: 1,
+// 					max: 9,
+// 				},
 
-					for (i = this.range.min; i <= this.range.max; i++) {
-						dropDelays += ".ld" + i + " { animation-delay: 1." + i + "s; }\n";
-					}
+// 				styles: function () {
+// 					var dropDelays = "\n",
+// 						addCSS;
 
-					addCSS = $("<style>" + dropDelays + "</style>");
-					$("head").append(addCSS);
-				},
+// 					for (i = this.range.min; i <= this.range.max; i++) {
+// 						dropDelays += ".ld" + i + " { animation-delay: 1." + i + "s; }\n";
+// 					}
 
-				main: function () {
-					var dp = 0;
-					obj.text("");
+// 					addCSS = $("<style>" + dropDelays + "</style>");
+// 					$("head").append(addCSS);
+// 				},
 
-					$.each(this.arr, function (index, value) {
-						dp = dp.randomInt(drop.range.min, drop.range.max);
+// 				main: function () {
+// 					var dp = 0;
+// 					obj.text("");
 
-						if (value === " ") value = "&nbsp"; //Add spaces
+// 					$.each(this.arr, function (index, value) {
+// 						dp = dp.randomInt(drop.range.min, drop.range.max);
 
-						obj.append(
-							'<span class="letterDrop ld' + dp + '">' + value + "</span>"
-						);
-					});
-				},
-			};
+// 						if (value === " ") value = "&nbsp"; //Add spaces
 
-			Number.prototype.randomInt = function (min, max) {
-				return Math.floor(Math.random() * (max - min + 1) + min);
-			};
+// 						obj.append(
+// 							'<span class="letterDrop ld' + dp + '">' + value + "</span>"
+// 						);
+// 					});
+// 				},
+// 			};
 
-			// Create styles
-			drop.styles();
+// 			Number.prototype.randomInt = function (min, max) {
+// 				return Math.floor(Math.random() * (max - min + 1) + min);
+// 			};
 
-			// Initialise
-			drop.main();
-		});
-	};
-})(jQuery);
+// 			// Create styles
+// 			drop.styles();
 
-// USAGE
-$("h1").letterDrop();
+// 			// Initialise
+// 			drop.main();
+// 		});
+// 	};
+// })(jQuery);
+
+// // USAGE
+// $("h1").letterDrop();
 // window.onload = function () {
 // 	animateSequence();
 // 	animateRandom();
