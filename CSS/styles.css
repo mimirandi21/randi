@@ -292,38 +292,6 @@ video {
 	text-align: center;
 	height: auto;
 }
-/* .line {
-	margin-top: 6.5em;
-	width: 70%;
-} */
-
-/* .line {
-	height: 5px;
-	background: rgb(74, 250, 250);
-	position: relative;
-	width: 100%;
-	/* -webkit-animation: line-draw 15s backwards; */
-/* animation: line-draw 5s ease-in-out;
-} */
-
-hr {
-	border-style: solid;
-	border-block-width: 15px;
-	border-color: rgb(74, 250, 250);
-}
-hr.animated {
-	width: 100%;
-	animation: line-draw 2s ease-in-out;
-}
-
-@keyframes line-draw {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 100%;
-	}
-}
 
 .project-section {
 	display: flex;
@@ -352,95 +320,8 @@ hr.animated {
 	margin-left: 20%;
 	padding-bottom: 0;
 }
-/* .letterDrop {
-	font-size: 6em;
-	position: relative;
-	top: 0;
-	display: inline-block;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	opacity: 0.8;
-	transform: rotateX(-90deg);
-	animation: letterDrop 1.2s ease 1 normal forwards;
-}
 
-@keyframes letterDrop {
-	10% {
-		opacity: 0.5;
-	}
-	20% {
-		opacity: 0.8;
-		top: 0.5em;
-		transform: rotateX(-360deg);
-	}
-	100% {
-		opacity: 1;
-		top: 1em;
-		transform: rotateX(360deg);
-	}
-} */
-/* @keyframes textAnim {
-	0% {
-		font-size: 80px;
-		fill: white;
-	}
-	10% {
-		font-size: 100px;
-		fill: rgb(74, 250, 250);
-	}
-	40% {
-		font-size: 70px;
-		fill: rgb(3, 95, 95);
-	}
-	100% {
-		font-size: 80px;
-		fill: white;
-	}
-}
-
-@-webkit-keyframes textAnim {
-	0% {
-		font-size: 80px;
-		fill: white;
-	}
-	10% {
-		font-size: 100px;
-		fill: rgb(74, 250, 250);
-	}
-	40% {
-		font-size: 70px;
-		fill: rgb(3, 95, 95);
-	}
-	100% {
-		font-size: 80px;
-		fill: white;
-	}
-}
-
-text tspan {
-	font-family: Helvetica, Arial;
-	font-weight: 900;
-	animation: textAnim 2s ease infinite;
-	-webkit-animation: textAnim 2s ease infinite;
-}
-
-#l2 {
-	animation-delay: 0.1s;
-	-webkit-animation-delay: 0.1s;
-}
-#l3 {
-	animation-delay: 0.2s;
-	-webkit-animation-delay: 0.2s;
-}
-#l4 {
-	animation-delay: 0.3s;
-	-webkit-animation-delay: 0.3s;
-}
-#l5 {
-	animation-delay: 0.4s;
-	-webkit-animation-delay: 0.4s;
-} */
-
+/* 
 @keyframes slow-wave {
 	0%,
 	100% {
@@ -1119,7 +1000,7 @@ text tspan {
 	animation-iteration-count: infinite;
 	animation-name: flip-wave-19;
 	display: inline-block;
-}
+} */
 
 .workstitle span {
 	color: rgb(74, 250, 250);
