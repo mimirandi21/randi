@@ -371,7 +371,6 @@ video {
 		margin-top: 100px;
 		margin-left: 0px;
 		position: relative;
-		overflow-x: initial;
 	}
 
 	p {
@@ -388,15 +387,31 @@ video {
 			clip-path: circle(20% at 25% 50%);
 		}
 	}
-	#landing,
-	#about,
-	#project,
-	#contact {
-		width: 100%;
-	}
 
 	.bottom-container,
 	.top-container {
 		padding-left: 60px;
+	}
+
+	.project-img {
+		transform: scale(0.75);
+	}
+}
+
+@media (max-width: 500px) {
+	.project-img {
+		transform: scale(0.5);
+	}
+
+	.about-box {
+		/* display: table;
+		margin: auto;
+		position: relative;
+		text-align: center; */
+		margin-left: -50px;
+	}
+
+	h2 {
+		font-size: 15px;
 	}
 }
