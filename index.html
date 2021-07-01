@@ -22,22 +22,41 @@
 			href="https://fonts.googleapis.com/css2?family=Handlee&family=Neucha&family=Rock+Salt&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>Randi Schreiner</title>
 	</head>
 	<body>
 		<div class="sidenav">
+			<button id="toggle" class="side in">
+				<i class="far fa-window-close"></i>
+			</button>
 			<a href="#landing"><h3>Home</h3></a>
 			<a href="#about"><h3>About</h3></a>
 			<a href="#projects"><h3>Projects</h3></a>
 			<a href="#contact"><h3>Contact</h3></a>
 		</div>
-		<div class="topnav">
+		<div class="topnav active">
 			<a href="#landing"><h3>Home</h3></a>
 			<a href="#about"><h3>About</h3></a>
 			<a href="#projects"><h3>Projects</h3></a>
 			<a href="#contact"><h3>Contact</h3></a>
+			<button id="toggle" class="top in">
+				<i class="far fa-window-close"></i>
+			</button>
 		</div>
-		<main>
+		<main class="main">
+			<button id="toggle" class="side out">
+				<i class="fas fa-angle-double-right"></i>
+			</button>
+			<button id="toggle" class="top out">
+				<i class="fas fa-angle-double-down"></i>
+			</button>
 			<div id="landing">
 				<div class="bottom-container">Hi, I'm Randi!</div>
 

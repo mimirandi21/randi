@@ -22,6 +22,34 @@ function easeContent() {
 	});
 }
 
+const toptoggleon = document.querySelector(".top.out");
+const sidetoggleon = document.querySelector(".side.out");
+const toptoggleoff = document.querySelector(".top.in");
+const sidetoggleoff = document.querySelector(".side.in");
+const topnav = document.querySelector(".topnav");
+const sidenav = document.querySelector(".sidenav");
+const main = document.querySelector(".main");
+
+sidetoggleon.addEventListener("click", () => {
+	sidenav.classList.add("active");
+	main.style.marginLeft = "160px";
+	sidetoggleon.style.display = "none";
+});
+
+toptoggleon.addEventListener("click", () => {
+	topnav.classList.add("active");
+});
+
+sidetoggleoff.addEventListener("click", () => {
+	sidenav.classList.remove("active");
+	main.style.marginLeft = "0px";
+	sidetoggleon.style.display = "inline-block";
+});
+
+toptoggleoff.addEventListener("click", () => {
+	topnav.classList.remove("active");
+});
+
 // var spans = document.querySelectorAll("tspan");
 // var i = 0;
 // for (i = 0; i < spans.length; i++) {
