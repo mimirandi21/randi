@@ -32,7 +32,7 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-
+	top: 40px;
 	right: 0;
 	padding: 1vw;
 }
